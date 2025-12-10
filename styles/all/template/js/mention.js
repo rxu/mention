@@ -20,8 +20,8 @@ $(document).ready(function () {
             },
 
             noMatchTemplate: function () {
-                const returnTemplate = (typeof SIMPLE_MENTION_NO_MATCH_FOUND === 'undefined') ? "No match found" : SIMPLE_MENTION_NO_MATCH_FOUND;
-                return "<li>" + returnTemplate + "</li>";
+                const returnTemplate = (typeof SIMPLE_MENTION_NO_MATCH_FOUND === 'undefined') ? 'No match found' : SIMPLE_MENTION_NO_MATCH_FOUND;
+                return '<li>' + returnTemplate + '</li>';
             },
 
             selectTemplate: function (item) {
