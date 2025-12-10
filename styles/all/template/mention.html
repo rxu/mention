@@ -1,12 +1,10 @@
 {% if U_AJAX_MENTION_URL %}
-    <script>
-        var MENTION_NO_MATCH_FOUND = '{{ lang('MENTION_NO_MATCH_FOUND')|e('js') }}';
-    </script>
-   {% INCLUDEJS '@paul999_mention/js/utils/tribute.min.js' %}
+    {% INCLUDEJS '@paul999_mention/js/utils/tribute.min.js' %}
     <script>
         var U_AJAX_MENTION_URL = '{{ U_AJAX_MENTION_URL|e('js') }}';
         var MIN_MENTION_LENGTH = '{{ MIN_MENTION_LENGTH|e('js') }}';
         var SIMPLE_MENTION_GROUP_NAME = '{{ lang('MENTION_GROUP_NAME')|e('js') }}';
+        var SIMPLE_MENTION_NO_MATCH_FOUND = '{{ lang('MENTION_NO_MATCH_FOUND')|e('js') }}';
 
         /**
          * This extension will hold the tribute object that handles the popup.

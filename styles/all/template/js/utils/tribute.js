@@ -1393,7 +1393,7 @@
                         }
 
                         return noMatchTemplate || function () {
-                            return "<li>" + MENTION_NO_MATCH_FOUND + "</li>";
+                            return "<li>No Match Found!</li>";
                         }.bind(_this);
                     }(noMatchTemplate),
                     // column to search against in the object
@@ -1432,7 +1432,7 @@
                             }
 
                             return noMatchTemplate || function () {
-                                return "<li>" + MENTION_NO_MATCH_FOUND + "</li>";
+                                return "<li>No Match Found!</li>";
                             }.bind(_this);
                         }(noMatchTemplate),
                         lookup: item.lookup || lookup,
